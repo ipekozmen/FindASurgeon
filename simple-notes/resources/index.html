@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Basit Not Defteri</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <div id="app">
+      <div id="error-banner"></div>
+      <div id="toolbar">
+        <button id="btn-new" title="Yeni (Ctrl+N)">Yeni</button>
+        <button id="btn-open" title="Aç (Ctrl+O)">Aç</button>
+        <button id="btn-save" title="Kaydet (Ctrl+S)">Kaydet</button>
+        <span class="sep"></span>
+        <button id="btn-undo" title="Geri Al (Ctrl+Z)">↶</button>
+        <button id="btn-redo" title="Yinele (Ctrl+Shift+Z)">↷</button>
+        <span class="sep"></span>
+        <select id="block-type" title="Yazı türü">
+          <option value="p">Gövde</option>
+          <option value="h1">Başlık 1</option>
+          <option value="h2">Başlık 2</option>
+          <option value="h3">Başlık 3</option>
+        </select>
+        <button id="btn-bold" title="Kalın (Ctrl+B)"><b>K</b></button>
+        <button id="btn-italic" title="İtalik (Ctrl+I)"><i>İ</i></button>
+        <span class="sep"></span>
+        <button id="btn-image" title="Resim Ekle">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" style="vertical-align:middle;margin-right:4px">
+            <rect x="3" y="3" width="18" height="18" rx="2"/>
+            <circle cx="8.5" cy="8.5" r="1.5"/>
+            <path d="M21 15l-5-5L5 21"/>
+          </svg>Resim
+        </button>
+      </div>
+
+      <div id="editor" contenteditable="true" spellcheck="true"></div>
+
+      <div id="statusbar">
+        <span id="filename">Adsız</span>
+        <span id="dirty-indicator"></span>
+        <span id="save-status"></span>
+      </div>
+    </div>
+
+    <script src="/js/neutralino.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
