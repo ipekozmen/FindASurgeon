@@ -1,0 +1,32 @@
+{
+  "name": "istanbul-otopark-haritasi",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@googlemaps/js-api-loader": "^2.1.1",
+    "@heroicons/react": "^2.2.0",
+    "leaflet": "^1.9.4",
+    "next": "16.3.0",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "react-leaflet": "^5.0.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/google.maps": "^3.65.5",
+    "@types/leaflet": "^1.9.22",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.0",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
